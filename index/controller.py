@@ -47,8 +47,8 @@ def allOff():
 #     board.digital[5].write(1)
 #     print("Encendiendo todas")
 
-def encenderBuzzed():
-    print("Encendiendo buzzed")
+def encenderBuzzer():
+    print("Encendiendo buzzer")
     board.digital[3].write(1)
 def encenderMotor():
     board.digital[4].write(1)
