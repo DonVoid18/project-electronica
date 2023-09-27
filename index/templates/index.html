@@ -9,8 +9,6 @@
     {% load static %}
     <!-- Bootstrap core CSS -->
     <link href="{% static 'css/slate.css' %}" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="{% static 'css/master.css' %}" rel="stylesheet">
 
 </head>
 
@@ -21,49 +19,46 @@
             <div>
                 <form method="POST">{% csrf_token %}
                     <input type="hidden" value="1" name="id">
-                    <button class="boton1">Led rojo</button> <br>
+                    <button class="boton1">&#128205; LED</button> <br>
                 </form>
             </div>
             <div>
                 <form method="POST">{% csrf_token %}
                     <input type="hidden" value="2" name="id">
-                    <button class="boton2">Led azul</button> <br>
+                    <button class="boton2">&#128266; BUZZER</button> <br>
                 </form>
             </div>
             <div>
                 <form method="POST">{% csrf_token %}
                     <input type="hidden" value="3" name="id">
-                    <button class="boton3">Led verde</button> <br>
+                    <button class="boton3">&#128166; MOTOR DE AGUA</button> <br>
                 </form>
             </div>
             <div>
                 <form method="POST">{% csrf_token %}
                     <input type="hidden" value="4" name="id">
-                    <button class="boton4">Led amarillo</button> <br>
-                </form>
-            </div>
-            <div>
-                <form method="POST">{% csrf_token %}
-                    <input type="hidden" value="5" name="id">
-                    <button class="botonApagarTodo">Apagar todos</button> <br>
-                </form>
-            </div>
-            <div>
-                <form method="POST">{% csrf_token %}
-                    <input type="hidden" value="6" name="id">
-                    <button class="botonEncenderTodo">Encender todos</button> <br>
+                    <button class="boton4">&#128247; CAMARA</button> <br>
                 </form>
             </div>
             <div>
                 <form method="POST">{% csrf_token %}
                     <input type="hidden" value="7" name="id">
-                    <button class="boton7">Encender buzzer</button> <br>
+                    <button class="boton7">&#128161; FOCO</button> <br>
                 </form>
             </div>
             <div>
                 <form method="POST">{% csrf_token %}
-                    <input type="hidden" value="8" name="id">
-                    <button class="boton8">Encender motor</button> <br>
+                    <input type="hidden" value="6" name="id">
+                    <button class="botonEncenderTodo">&#127775; Encender todo</button> <br>
+                </form>
+            </div>
+
+        </div>
+        <div class="container_buttons2">
+            <div>
+                <form method="POST">{% csrf_token %}
+                    <input type="hidden" value="5" name="id">
+                    <button class="botonApagarTodo">&#127988; Apagar todo</button> <br>
                 </form>
             </div>
         </div>
