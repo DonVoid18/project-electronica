@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from index.controller import blueOn, greenOn, redOn , yellowOn, allOff, encenderBuzzer, encenderMotor
+from index.controller import blueOn, greenOn, redOn , yellowOn, allOff, encenderMotor, otramelodia
 
 # Create your views here.
 def index_view (request):
@@ -16,7 +16,7 @@ def index_view (request):
         elif int(id) == 5:
             allOff()
         elif int(id) == 7:
-            encenderBuzzer()
+            otramelodia()
         elif int(id) == 8:
             encenderMotor()
         print(id)
