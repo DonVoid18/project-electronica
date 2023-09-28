@@ -14,12 +14,13 @@ def index_view (request):
             encenderMOTAGUA()
         elif int(id) == 4:
             encenderCAMARA()
-        elif int(id) == 5:
-            apagarTODO()
         elif int(id) == 6:
             encenderTODO()
         elif int(id) == 7:
             encenderFOCO()
+        else :
+            print("No se reconoce el ID")
+            apagarTODO()
         
         print("ID: ", id)
     return render(request, 'index.html')

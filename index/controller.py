@@ -1,5 +1,4 @@
 import pyfirmata2
-import pyfirmata
 import time
 # autodetect
 PORT = pyfirmata2.Arduino.AUTODETECT
@@ -11,14 +10,17 @@ def encenderLED():
 
 def encenderBUZZER():
     print("Encendiendo BUZZER")
-    board.digital[3].write(1)
+    # board.digital[3].write(1)
     melodiaBUZZER()
 
 def encenderMOTAGUA():
+    # problema
     print("Encendiendo MOT.AGUA")
     board.digital[4].write(1)
+    
 
 def encenderCAMARA():
+    # problema
     print("Encendiendo CAMARA")
     board.digital[5].write(1)
 
@@ -40,6 +42,7 @@ def encenderTODO():
     board.digital[4].write(1)
     board.digital[5].write(1)
     board.digital[6].write(1)
+    melodiaBUZZER()
     print("Encendiendo todas")
 
 def melodiaBUZZER():
