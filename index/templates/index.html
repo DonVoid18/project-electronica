@@ -15,52 +15,37 @@
 <body>
     <div class="container">
         <div class="title">PROYECTO PARA ELECTRÓNICA DIGITAL</div>
-        <div class="container_buttons">
-            <div>
-                <form method="POST">{% csrf_token %}
-                    <input type="hidden" value="1" name="id">
-                    <button class="boton1">&#128205; LED</button> <br>
-                </form>
-            </div>
-            <div>
-                <form method="POST">{% csrf_token %}
-                    <input type="hidden" value="2" name="id">
-                    <button class="boton2">&#128266; BUZZER</button> <br>
-                </form>
-            </div>
-            <div>
-                <form method="POST">{% csrf_token %}
-                    <input type="hidden" value="3" name="id">
-                    <button class="boton3">&#128166; MOTOR DE AGUA</button> <br>
-                </form>
-            </div>
-            <div>
-                <form method="POST">{% csrf_token %}
-                    <input type="hidden" value="4" name="id">
-                    <button class="boton4">&#128247; CAMARA</button> <br>
-                </form>
-            </div>
-            <div>
-                <form method="POST">{% csrf_token %}
-                    <input type="hidden" value="7" name="id">
-                    <button class="boton7">&#128161; FOCO</button> <br>
-                </form>
-            </div>
-            <div>
-                <form method="POST">{% csrf_token %}
-                    <input type="hidden" value="6" name="id">
-                    <button class="botonEncenderTodo">&#127775; Encender todo</button> <br>
-                </form>
-            </div>
-
+        <div class="containerButtons">
+            <form class="item_1" method="POST">{% csrf_token %}
+                <input type="hidden" value="1" name="id">
+                <button class="boton1">&#128205; LED</button> <br>
+            </form>
+            <form class="item_1" method="POST">{% csrf_token %}
+                <input type="hidden" value="2" name="id">
+                <button class="boton2">&#128266; BUZZER</button> <br>
+            </form>
+            <form class="item_1" method="POST">{% csrf_token %}
+                <input type="hidden" value="3" name="id">
+                <button class="boton3">&#128166; MOTOR DE AGUA</button> <br>
+            </form>
+            <form class="item_1" method="POST">{% csrf_token %}
+                <input type="hidden" value="4" name="id">
+                <button class="boton4">&#128247; CAMARA</button> <br>
+            </form>
+            <form class="item_1" method="POST">{% csrf_token %}
+                <input type="hidden" value="7" name="id">
+                <button class="boton7">&#128161; FOCO</button> <br>
+            </form>
+            <form class="item_1" method="POST">{% csrf_token %}
+                <input type="hidden" value="6" name="id">
+                <button class="botonEncenderTodo">&#127775; Encender todo</button> <br>
+            </form>
         </div>
-        <div class="container_buttons2">
-            <div>
-                <form method="POST">{% csrf_token %}
-                    <input type="hidden" value="5" name="id">
-                    <button class="botonApagarTodo">&#127988; Apagar todo</button> <br>
-                </form>
-            </div>
+        <div class="containerButtons2">
+            <form class="item_2" method="POST">{% csrf_token %}
+                <input type="hidden" value="5" name="id">
+                <button class="botonApagarTodo">&#127988; Apagar todo</button> <br>
+            </form>
         </div>
     </div>
     <!-- Custom Scripts -->
