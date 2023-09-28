@@ -74,10 +74,20 @@ button:hover {
   transition: ease 0.5s;
   transform: scale(1.05);
 }
-
+.autor{
+  font-size: 16px;
+  text-align: center;
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.534);
+}
 @media (max-width: 768px) {
   .title {
     font-size: 16px;
+  }
+  .autor {
+    font-size: 14px;
   }
   button {
     font-size: 14px;
